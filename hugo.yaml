@@ -29,11 +29,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+#    - identifier: gallery
+#      name: Gallery
+#      title: Blog posts
+#      url: /gallery
+#      weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -155,8 +155,8 @@ params:
     title: "About Me"
     image: "/images/me2.jpg"
     content: |-
-      Hi, I'm Théo ! I'm an student in software engineering from France with a passion for 3D graphics and game development.
-      Currently in Québec studying at UQAC, I am in my last year of my CS degree at ESIR, with a specialization in video game development and digital imaging.
+      Hi, I'm Théo ! I'm an student in software engineering from France with a passion for 3D graphics and game engine development.
+      Currently in Québec studying at UQAC, I am in my last year of my CS degree at ESIR, with a specialization in video games and digital imaging.
       I enjoy various types of games, but I like challenges and good stories, and I hope I'll be able to work on a game that will impact people as much as other game impacted me.
     skills:
       enable: true
@@ -168,6 +168,7 @@ params:
         - "OpenGL"
         - "Unity"
         - "Unreal Engine"
+        - "Event organisation"
 
   # Experience
   experience:
@@ -229,20 +230,27 @@ params:
     items:
       - title: "Master in computer science (double degree)"
         school:
-          name: "Université du Québec à Chicoutimi"
+          name: "Université du Québec à Chicoutimi - UQAC"
           url: "https://www.uqac.ca/"
         date: "2024 - present"
         content: |-
                    Specialization in video game development. Done in partnership with ESIR.
+                   - Video game development
+                   - Game creation process
       - title: "Master in computer science"
         school:
-          name: "École Supérieure d'Ingénieurs de Rennes"
+          name: "École Supérieure d'Ingénieurs de Rennes - ESIR"
           url: "https://esir.univ-rennes.fr/"
         date: "2022 - present"
-        content: "Specialization in digital imaging (image analysis and processing, 3D graphics, linear algebra) in the 2nd year"
+        content: |-
+                   Specialization in digital imaging in the 2nd year.
+                    - Image analysis and processing
+                    - 3D graphics
+                    - Linear algebra
+                    - Management
       - title: "Computer Science Preparatory class"
         school:
-          name: "École Supérieure d'Ingénieurs de Rennes"
+          name: "École Supérieure d'Ingénieurs de Rennes - ESIR"
           url: "https://esir.univ-rennes.fr/"
         date: "2020 - 2022"
         content: "Computer science and physics preparatory class"
