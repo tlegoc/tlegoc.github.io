@@ -1,0 +1,452 @@
+baseURL: "https://tlegoc.github.io"
+languageCode: "en-us"
+title: "Théo Le Goc's portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Théo Le Goc"
+  description: My personnal website
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.jpg"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#ffffff"
+    secondaryTextColor: "#ffffff"
+    backgroundColor: "#090a08"
+    primaryColor: "#42a326"
+    secondaryColor: "#202020"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Théo Le Goc" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Théo Le Goc"
+    subtitle: "Video game graphics/Digital imaging"
+#    content: "Here you'll find my projects, resume, achievements and some blog posts on subjects I like."
+    image: /images/me.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/tlegoc
+        - icon: fab fa-x-twitter
+          url: https://x.com/tlegoc
+#      customIcons:
+#        - icon: /fav.png
+#          url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me2.jpg"
+    content: |-
+      Hi, I'm Théo ! I'm an student in software engineering from France with a passion for 3D graphics and game development.
+      Currently in Québec studying at UQAC, I am in my last year of my CS degree at ESIR, with a specialization in video game development and digital imaging.
+      I enjoy various types of games, but I like challenges and good stories, and I hope I'll be able to work on a game that will impact people as much as other game impacted me.
+    skills:
+      enable: true
+      title: "My skills:"
+      items:
+        - "C++/C"
+        - "C#"
+        - "Vulkan"
+        - "OpenGL"
+        - "Unity"
+        - "Unreal Engine"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Software developper intern"
+        company: "BCom"
+        companyUrl: "https://b-com.com/en"
+        date: "June 2024 - August 2024"
+        featuredLink:
+          enable: true
+          name: "LinkedIn post about the project"
+          url: "https://www.linkedin.com/posts/nicolas-ramin_vr-6dof-volumetricvideo-activity-7183849949262974976-ossy?utm_source=share&utm_medium=member_desktop"
+        content: |
+            2 months internship working in a private research institute. I had the chance of working with 3D frameworks such as WebGL and WebXR to render 3D volumetric videos on browsers. The goal was to enrich videos with elements that could be interacted with in XR, on phones and on PC.
+             - WebGL
+             - Three.js
+             - WebXR
+             - Python
+
+      - job: "Software developper intern"
+        company: "Orange Business"
+        companyUrl: "https://www.orange-business.com/en"
+        date: "June 2023 - July 2023"
+#        info:
+#          enable: true
+#          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          One month internship as a web developper in a 30 person team. I worked on a demo project used to evaluate the skills of interns and make them learn full stack development.
+           - AWS services
+           - Angular
+           - Serverless
+           - DevOps
+           - Amazon AI Rekognition (demo)
+
+      - job: "Technical support"
+        company: "ISATI"
+        companyUrl: "https://www.isati.org/"
+        date: "April 2022 - April 2024"
+        featuredLink:
+          enable: true
+          name: "WEI App Github"
+          url: "https://github.com/BDE-ISATI/wei-api-v4"
+        info:
+          enable: false
+        content: |
+          Member of ESIR's student association as technical support. I had the task of managing the online infrastructure of the group and designing apps and websites for them, such as the ISATI WEI App, used during ESIR's integration month to help students to meet each other.
+           - AWS Services
+           - Python
+           - Custom domain managment
+           - Technical support
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master in computer science (double degree)"
+        school:
+          name: "Université du Québec à Chicoutimi"
+          url: "https://www.uqac.ca/"
+        date: "2024 - present"
+        content: |-
+                   Specialization in video game development. Done in partnership with ESIR.
+      - title: "Master in computer science"
+        school:
+          name: "École Supérieure d'Ingénieurs de Rennes"
+          url: "https://esir.univ-rennes.fr/"
+        date: "2022 - present"
+        content: "Specialization in digital imaging (image analysis and processing, 3D graphics, linear algebra) in the 2nd year"
+      - title: "Computer Science Preparatory class"
+        school:
+          name: "École Supérieure d'Ingénieurs de Rennes"
+          url: "https://esir.univ-rennes.fr/"
+        date: "2020 - 2022"
+        content: "Computer science and physics preparatory class"
+      - title: "Baccalauréat"
+        school:
+          name: "Lycée Sévigné"
+        date: "2017 - 2020"
+        GPA: "Passed with high honours"
+        content: "Scientific Baccalauréat (High School Diploma)"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Sopra Steria break the code 2023
+        content: 2nd place.
+        url: https://www.linkedin.com/feed/update/urn:li:activity:7134940268826390529/
+        image: /images/sopra.jpg
+#      - title: Facebook Hackathon Winner
+#        content: Developed a product using Artificial Intelligence.
+#        image: /images/achievment.jpg
+#      - title: Hugo Profile
+#        content: Developed a theme and getting 1K+ downloads per month.
+#        url: "https://github.com/gurusabarish/hugo-profile"
+#        image: /images/achievment.jpg
+#      - title: Microsoft Imagine Runner
+#        content: We are developed a product which can help others.
+#      - title: Google Summer of Code
+#        content: Contributed to a open source project.
+#        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Radiance Cascade Global Illumination
+        content: My implementation of Alexander Sannikov's Radiance Cascade Global Illumination algorithm, done entirely with C++, Vulkan and Slang
+        image: /images/gi1.png
+        badges:
+          - "Vulkan"
+          - "C++"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/RadianceCascadesGIVulkan
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/RadianceCascadesGIVulkan
+      - title: Gamejam 2024
+        content: 50 person Gamejam made for ESIR students, done in partnership with Orange Business and the University of Rennes.
+        image: /images/gamejam20241.jpg
+        featured:
+          name: Event end post
+          link: https://www.linkedin.com/posts/tlegoc_orange-gamejam-jeuxvideo-activity-7183772320904159232-OY8q?utm_source=share&utm_medium=member_desktop
+        badges:
+          - "Event org."
+          - "Finance"
+          - "Communication"
+        links:
+          - icon: fab fa-linkedin
+            url: https://www.linkedin.com/posts/tlegoc_la-gamejam-de-lesir-de-retour-en-2024-activity-7171043500275159040-lrxS?utm_source=share&utm_medium=member_desktop
+      - title: Gamejam 2023
+        content: 50 person Gamejam made for ESIR students, done in partnership with Orange Business and the University of Rennes.
+        image: /images/gamejam20231.jpg
+        featured:
+          name: Event end post
+          link: https://www.linkedin.com/posts/tlegoc_gamejam-esir-jeuxvideo-activity-7038560637651689472-0xtj?utm_source=share&utm_medium=member_desktop
+        badges:
+          - "Event org."
+          - "Finance"
+          - "Communication"
+        links:
+          - icon: fab fa-linkedin
+            url: https://www.linkedin.com/posts/tlegoc_gamejam-esir-jeuxvideo-activity-7038560637651689472-0xtj?utm_source=share&utm_medium=member_desktop
+      - title: TP SI Anim
+        content: "Results of the OpenGL course at ESIR: Phong shading, cell shading, blur, scene graph, procedural animations, inverse kinematics."
+        image: /images/anim.png
+        badges:
+          - "OpenGL"
+          - "C++"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/ESIR_TP_SI_ANIM
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/ESIR_TP_SI_ANIM
+      - title: Shell texturing
+        content: Unity shell texturing implementation, based on a youtube video.
+        image: /images/shell.png
+        badges:
+          - "Unity"
+          - "C#"
+          - "Shaders"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/ShellTexturing
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/ShellTexturing
+      - title: Water FFT simulation (WIP)
+        content: Work in progress ocean simulation in Unity using compute shaders. Partly finished, needs some maths adjustment but most of the logic is here.
+        image: /images/water.png
+        badges:
+          - "Unity"
+          - "C#"
+          - "Shaders"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/FFTWater
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/FFTWater
+      - title: ESIR_ProjetProg
+        content: Game using a custom OpenGL engine made in 5 days for a gamejam created by ESIR teachers. Had basic particle support, map loading and a basic entity system.
+        image: /images/projprog.png
+        badges:
+          - "OpenGL"
+          - "C++"
+          - "Gamejam"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/ESIR_ProjetProg
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/ESIR_ProjetProg
+      - title: Call of Battlefield
+        content: Multiplayer Coop FPS made with Unity for a class.
+        image: /images/cob.png
+        badges:
+          - "Unity"
+          - "C#"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/KilianMarcelin/CallOfBattlefield
+        featured:
+          name: GitHub repository
+          link: https://github.com/KilianMarcelin/CallOfBattlefield
+      - title: Ant simulation
+        content: "Anthill simulation originally made in C++, this time with OpenGL. Original C++ version : https://github.com/tlegoc/ESIR_Ants"
+        image: /images/ants.png
+        badges:
+          - "OpenGL"
+          - "C++"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/GL_Ants
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/GL_Ants
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Whether you have a question or just want to say hi, feel free to send an email !
+    btnName: Mail me
+    btnLink: mailto:theo@legoc.net
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/tlegoc
+      linkedin: https://www.linkedin.com/in/tlegoc/
+      twitter: https://x.com/tlegoc
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

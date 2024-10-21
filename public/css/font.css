@@ -1,0 +1,20 @@
+
+/* Default font for body */
+body {
+    font-family: "Alata", sans-serif !important;/*Lora*/
+}
+
+/* secondary font */
+.secondary-font, #secondary-font {
+    font-family: "Alata", sans-serif;/*Lora*/
+}
+
+/* primary font */
+.primary-font, #primary-font {
+    font-family: "Alata", sans-serif; /*alata*/
+}
+
+/* Default font */
+.default-font, #default-font {
+    font-family: "Roboto", sans-serif;
+}
