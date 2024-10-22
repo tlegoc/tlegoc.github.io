@@ -166,6 +166,7 @@ params:
         - "C#"
         - "Vulkan"
         - "OpenGL"
+        - "Git/Perforce"
         - "Unity"
         - "Unreal Engine"
         - "Event organisation"
@@ -300,6 +301,13 @@ params:
         featured:
           name: GitHub repository
           link: https://github.com/tlegoc/RadianceCascadesGIVulkan
+      - title: Upcoming Unreal engine 5 puzzle game
+        content: Puzzle game made in UE5 for video game creation course 1 (8INF960) at UQAC
+        image: /images/unreal.png
+        badges:
+          - "C++"
+          - "Unreal Engine"
+          - "Perforce"
       - title: Gamejam 2024
         content: 50 person Gamejam made for ESIR students, done in partnership with Orange Business and the University of Rennes.
         image: /images/gamejam20241.jpg
