@@ -316,6 +316,27 @@ params:
           - "C++"
           - "Unreal Engine"
           - "Perforce"
+      - title: Doomension
+        content: Small versus game made during UQAC's Wonderjam a24, with theme Dimension and styles "Every man for himself" & "Maniac". Made use of the scriptable render pipeline.
+        image: /images/doomension.png
+        badges:
+          - "Unity"
+          - "C#"
+        featured:
+          name: Itch.io page
+          link: https://tea-enjoyers.itch.io/doomension
+      - title: TP SI Anim
+        content: "Results of the OpenGL course at ESIR: Phong shading, cell shading, blur, scene graph, procedural animations, inverse kinematics."
+        image: /images/anim.png
+        badges:
+          - "OpenGL"
+          - "C++"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/tlegoc/ESIR_TP_SI_ANIM
+        featured:
+          name: GitHub repository
+          link: https://github.com/tlegoc/ESIR_TP_SI_ANIM
       - title: Gamejam 2024
         content: 50 person Gamejam made for ESIR students, done in partnership with Orange Business and the University of Rennes.
         image: /images/gamejam20241.jpg
@@ -342,18 +363,6 @@ params:
         links:
           - icon: fab fa-linkedin
             url: https://www.linkedin.com/posts/tlegoc_gamejam-esir-jeuxvideo-activity-7038560637651689472-0xtj?utm_source=share&utm_medium=member_desktop
-      - title: TP SI Anim
-        content: "Results of the OpenGL course at ESIR: Phong shading, cell shading, blur, scene graph, procedural animations, inverse kinematics."
-        image: /images/anim.png
-        badges:
-          - "OpenGL"
-          - "C++"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/tlegoc/ESIR_TP_SI_ANIM
-        featured:
-          name: GitHub repository
-          link: https://github.com/tlegoc/ESIR_TP_SI_ANIM
       - title: Shell texturing
         content: Unity shell texturing implementation, based on a youtube video.
         image: /images/shell.png
