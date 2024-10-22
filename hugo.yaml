@@ -56,7 +56,7 @@ params:
   title: "Théo Le Goc"
   description: My personnal website
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.jpg"
+  favicon: "fav.jpg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
