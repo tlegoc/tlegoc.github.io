@@ -61,6 +61,8 @@ jobs:
             --minify \
             --destination public \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: DEBUG PRINT
+        run: "ls -a public"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
