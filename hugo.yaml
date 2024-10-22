@@ -176,6 +176,13 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Upcoming - Research assistant"
+        company: "UQAC"
+        companyUrl: "https://www.uqac.ca/"
+        date: "January 2025 - April 2025"
+        content: |
+            Assisting a team of researcher on: A Comprehensive Model of Automated Evaluation of Difficulty in Platformer Games. Creation of tools to perform difficulty analysis in-editor.
+             - Unreal Engine
       - job: "Software developper intern"
         company: "BCom"
         companyUrl: "https://b-com.com/en"
