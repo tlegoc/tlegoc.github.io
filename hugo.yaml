@@ -119,7 +119,7 @@ params:
       disableExperience: false
       disableEducation: false
       disableProjects: false
-      disableAchievements: false
+      disableAchievements: true
       disableContact: false
 
   # Hero
@@ -137,8 +137,8 @@ params:
       enable: true
       name: "Resume"
       url: "https://1drv.ms/f/c/909c18bb2dd02227/Emo5lwWcccFGolA0_Tz-GxMB5SETTPuVLgvl5hXgUXXt7Q?e=0w6JGO"
-      download: true
-      newPage: false
+      download: false
+      newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -154,9 +154,9 @@ params:
     enable: true
     title: "About Me"
     image: "/images/me2.jpg"
-    content: |-
+    content: |
       Hi, I'm Théo ! I'm a 22 years old student in software engineering from France with a passion for 3D graphics and game engine development. **I am looking for an internship in the field of game engine development !**
-      Currently in Québec studying at UQAC, I am in my last year of my CS degree at ESIR, with a major in video games and digital imaging.
+      Currently in Québec studying at UQAC, I am in my last year of my master's degree at ESIR, with a major in video games and digital imaging.
       I enjoy various types of games, but I like challenges and good stories, and I hope I'll be able to work on a game that will impact people as much as other game impacted me.
     skills:
       enable: true
@@ -242,7 +242,7 @@ params:
           url: "https://www.uqac.ca/"
         date: "2024 - present"
         content: |-
-                   Major in video game development. Exchange with ESIR.
+                   Master in computer science, majoring in video game development. Exchange with ESIR.
                    - Video game development
                    - Game creation process
                    - Game engine development
@@ -252,7 +252,7 @@ params:
           url: "https://esir.univ-rennes.fr/"
         date: "2022 - present"
         content: |-
-                    Master in Computer science, major in digital imaging and 3D graphics.
+                    Master in Computer science, majoring in digital imaging and 3D graphics.
                     - Image analysis and processing
                     - 3D graphics
                     - Linear algebra
@@ -307,8 +307,8 @@ params:
           - icon: fab fa-github
             url: https://github.com/tlegoc/RadianceCascadesGIVulkan
         featured:
-          name: GitHub repository
-          link: https://github.com/tlegoc/RadianceCascadesGIVulkan
+          name: Blog post
+          link: /blogs/radiance-cascade
       - title: Upcoming Unreal engine 5 puzzle game
         content: Puzzle game made in UE5 for video game creation course 1 (8INF960) at UQAC
         image: /images/unreal.png
