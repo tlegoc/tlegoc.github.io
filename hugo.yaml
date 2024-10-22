@@ -155,8 +155,8 @@ params:
     title: "About Me"
     image: "/images/me2.jpg"
     content: |-
-      Hi, I'm Théo ! I'm an student in software engineering from France with a passion for 3D graphics and game engine development.
-      Currently in Québec studying at UQAC, I am in my last year of my CS degree at ESIR, with a specialization in video games and digital imaging.
+      Hi, I'm Théo ! I'm a 22 years old student in software engineering from France with a passion for 3D graphics and game engine development. **I am looking for an internship in the field of game engine development !**
+      Currently in Québec studying at UQAC, I am in my last year of my CS degree at ESIR, with a major in video games and digital imaging.
       I enjoy various types of games, but I like challenges and good stories, and I hope I'll be able to work on a game that will impact people as much as other game impacted me.
     skills:
       enable: true
@@ -185,7 +185,7 @@ params:
           name: "LinkedIn post about the project"
           url: "https://www.linkedin.com/posts/nicolas-ramin_vr-6dof-volumetricvideo-activity-7183849949262974976-ossy?utm_source=share&utm_medium=member_desktop"
         content: |
-            2 months internship working in a private research institute. I had the chance of working with 3D frameworks such as WebGL and WebXR to render 3D volumetric videos on browsers. The goal was to enrich videos with elements that could be interacted with in XR, on phones and on PC.
+            2 months internship working in a private research institute. Working on a research project about rendering 3D volumetric videos on browsers and adding interactive 3D in XR, phones and PC.
              - WebGL
              - Three.js
              - WebXR
@@ -199,7 +199,7 @@ params:
 #          enable: true
 #          content: I worked as a software developer for more than one year in Amazon.
         content: |
-          One month internship as a web developper in a 30 person team. I worked on a demo project used to evaluate the skills of interns and make them learn full stack development.
+          One month internship. Web developper on a project used to evaluate the skills of interns and present full stack development.
            - AWS services
            - Angular
            - Serverless
@@ -217,7 +217,7 @@ params:
         info:
           enable: false
         content: |
-          Member of ESIR's student association as technical support. I had the task of managing the online infrastructure of the group and designing apps and websites for them, such as the ISATI WEI App, used during ESIR's integration month to help students to meet each other.
+          Member of ESIR’s student association, managing the online infrastructure and designing apps and websites used in events such as the ISATI WEI App, used during ESIR's integration month to help students to meet each other.
            - AWS Services
            - Python
            - Custom domain managment
@@ -229,38 +229,39 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master in computer science (double degree)"
+      - title: "Exchange, double master's degree"
         school:
           name: "Université du Québec à Chicoutimi - UQAC"
           url: "https://www.uqac.ca/"
         date: "2024 - present"
         content: |-
-                   Specialization in video game development. Done in partnership with ESIR.
+                   Major in video game development. Exchange with ESIR.
                    - Video game development
                    - Game creation process
-      - title: "Master in computer science"
+                   - Game engine development
+      - title: "Master in Engineering"
         school:
           name: "École Supérieure d'Ingénieurs de Rennes - ESIR"
           url: "https://esir.univ-rennes.fr/"
         date: "2022 - present"
         content: |-
-                   Specialization in digital imaging in the 2nd year.
+                    Master in Computer science, major in digital imaging and 3D graphics.
                     - Image analysis and processing
                     - 3D graphics
                     - Linear algebra
                     - Management
-      - title: "Computer Science Preparatory class"
+      - title: "Two year undergraduate course"
         school:
           name: "École Supérieure d'Ingénieurs de Rennes - ESIR"
           url: "https://esir.univ-rennes.fr/"
         date: "2020 - 2022"
-        content: "Computer science and physics preparatory class"
-      - title: "Baccalauréat"
+        content: Two year undergraduate course in computer science and physics to prepare for ESIR's master.
+      - title: "French Baccalauréat"
         school:
           name: "Lycée Sévigné"
         date: "2017 - 2020"
-        GPA: "Passed with high honours"
-        content: "Scientific Baccalauréat (High School Diploma)"
+        GPA: "Passed with honours"
+        content: "Scientific French Baccalauréat, major in mathematics."
 
   # Achievements
   achievements:
