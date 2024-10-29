@@ -16,6 +16,9 @@ Lighting and especially global illumination is a subject I really liked so I wan
 In this post I'll share one of the problems I encountered and present how the app works. I am however not going to talk about ray calculation and raymarch, or how I decide what rays to send (see [this great post by tmpvar](https://tmpvar.com/poc/radiance-cascades/)).
 
 ## Demo
+
+[Github repository](https://github.com/tlegoc/RadianceCascadesGIVulkan)
+
 {{< youtube lpKE0YDOlZA >}}
 <br />
 
